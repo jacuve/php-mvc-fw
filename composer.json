@@ -1,0 +1,15 @@
+{
+    "name": "jacuve/php-mvc-fw",
+    "authors": [
+        {
+            "name": "Jose Cuenca",
+            "email": "jcuenca@monsol.net"
+        }
+    ],
+    "autoload":{
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
