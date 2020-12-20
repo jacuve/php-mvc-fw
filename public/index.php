@@ -20,4 +20,4 @@ $app->router->post('/register', [AuthController::class, 'register']);
 $app->run();
 
 // https://www.youtube.com/watch?v=6ERdu4k62wI&feature=youtu.be
-// minuto 1:55:00 registerModel
+// minuto 2:21:00 migrations
