@@ -32,8 +32,8 @@ $app->router->post('/register', [AuthController::class, 'register']);
 $app->run();
 
 // https://www.youtube.com/watch?v=6ERdu4k62wI&feature=youtu.be
-// 3:50:00 -> form labels
-
+// 3:59:51 -> 4:: login y protected rows
+// 3:50:00 -> 3:59:50 form labels
 // 3:31:30 -> 3:48:50 redirect y session flash message
 // 3:18:00 -> 3:31:30 password encrypt
 // 3:17:30 fin registratsion
