@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d1d037495152df27cc150dc95181346",
+    "content-hash": "ab797b7cf769d81afc3a5d0010b2b33b",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -71,6 +71,40 @@
                 }
             ],
             "time": "2020-04-13T13:17:36+00:00"
+        },
+        {
+            "name": "jacuve/php-mvc-core",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jacuve/php-mvc-core.git",
+                "reference": "ea5c932b49374f2328b279e3ed647bc9f3fce87f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jacuve/php-mvc-core/zipball/ea5c932b49374f2328b279e3ed647bc9f3fce87f",
+                "reference": "ea5c932b49374f2328b279e3ed647bc9f3fce87f",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "jacuve\\phpmvc\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Jose Cuenca",
+                    "email": "jacuve@gmail.com"
+                }
+            ],
+            "description": "Core de framework basico mvc",
+            "support": {
+                "issues": "https://github.com/jacuve/php-mvc-core/issues",
+                "source": "https://github.com/jacuve/php-mvc-core/tree/v1.0.2"
+            },
+            "time": "2020-12-22T15:34:42+00:00"
         },
         {
             "name": "phpoption/phpoption",
