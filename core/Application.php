@@ -3,6 +3,8 @@
 namespace app\core;
 
 use app\core\Request;
+use app\core\db\Database;
+use app\core\db\DBModel;
 
 class Application
 {
@@ -15,7 +17,8 @@ class Application
     public Response $response;
     public Session $session;
     public Database $db;
-    public ?DBModel $user;
+    public ?UserModel $user;
+    public View $view;
 
     public static Application $app;
     public ?Controller $controller = null;
@@ -29,6 +32,7 @@ class Application
         $this->response = new Response();
         $this->session = new Session();
         $this->router = new Router($this->request, $this->response);
+        $this->view = new View();
 
         $this->db = new Database($config['db']);
         $primaryValue = $this->session->get('user');
@@ -41,7 +45,7 @@ class Application
 
     }
 
-    public function login(DBModel $user)
+    public function login(UserModel $user)
     {
         $this->user = $user;
         $primaryKey = $user->primaryKey();
@@ -65,7 +69,7 @@ class Application
         echo $this->router->resolve();
         } catch (\Exception $e){
             $this->response->setStatusCode($e->getCode());
-            echo $this->router->renderView('_error', [
+            echo $this->view->renderView('_error', [
                 'exception' => $e
             ]);
         }

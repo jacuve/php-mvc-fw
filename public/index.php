@@ -24,7 +24,7 @@ $app = new Application(dirname(__DIR__), $config);
 
 $app->router->get('/', [SiteController::class, 'home']);
 $app->router->get('/contact', [SiteController::class, 'contact']);
-$app->router->post('/contact', [SiteController::class, 'handleContact']);
+$app->router->post('/contact', [SiteController::class, 'contact']);
 
 $app->router->get('/login', [AuthController::class, 'login']);
 $app->router->post('/login', [AuthController::class, 'login']);
@@ -36,7 +36,8 @@ $app->router->get('/profile', [AuthController::class, 'profile']);
 $app->run();
 
 // https://www.youtube.com/watch?v=6ERdu4k62wI&feature=youtu.be
-// 4:58:00 -> 4:00:00 title
+// 5:24:00 ->
+// 4:58:00 -> 5:24:00 title y moved classes
 // 4:35:30 -> 4:57:44 protected
 // 4:30:00 -> 4:35:00 mensaje y logout
 // 3:59:51 -> 4:29: login y protected rows

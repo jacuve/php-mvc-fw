@@ -1,6 +1,8 @@
 <?php
 
-namespace app\core;
+namespace app\core\db;
+
+use app\core\Application;
 
 class Database
 {
@@ -58,7 +60,7 @@ class Database
     {
         $statement = $this->pdo->prepare("SELECT migration FROM migrations");
         $statement->execute();
-        return $statement->fetchAll((\PDO::FETCH_COLUMN));
+        return $statement->fetchAll(\PDO::FETCH_COLUMN);
     }
 
     private function saveMigrations(array $migrations)
