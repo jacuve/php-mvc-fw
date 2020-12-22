@@ -1,6 +1,6 @@
 <?php
 
-use app\core\Application;
+use jacuve\phpmvc\Application;
 
 class m0003_default_user_status
 {

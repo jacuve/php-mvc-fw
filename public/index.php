@@ -1,7 +1,7 @@
 <?php
 
 
-use app\core\Application;
+use jacuve\phpmvc\Application;
 use app\controllers\SiteController;
 use app\controllers\AuthController;
 use app\models\User;

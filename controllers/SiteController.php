@@ -2,11 +2,11 @@
 
 namespace app\controllers;
 
-use app\core\Application;
-use app\core\Controller;
+use jacuve\phpmvc\Application;
+use jacuve\phpmvc\Controller;
 use app\models\ContactForm;
-use app\core\Request;
-use app\core\Response;
+use jacuve\phpmvc\Request;
+use jacuve\phpmvc\Response;
 
 class SiteController extends Controller
 {

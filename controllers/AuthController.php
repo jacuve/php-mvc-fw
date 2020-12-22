@@ -1,13 +1,13 @@
 <?php
 namespace app\controllers;
 
-use app\core\Application;
-use app\core\Controller;
-use app\core\Request;
-use app\core\Response;
+use jacuve\phpmvc\Application;
+use jacuve\phpmvc\Controller;
+use jacuve\phpmvc\Request;
+use jacuve\phpmvc\Response;
 use app\models\User;
 use app\models\LoginForm;
-use app\core\middlewares\AuthMiddleware;
+use jacuve\phpmvc\middlewares\AuthMiddleware;
 
 class AuthController extends Controller
 {

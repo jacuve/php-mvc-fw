@@ -2,8 +2,8 @@
 
 namespace app\models;
 
-use app\core\Application;
-use app\core\Model;
+use jacuve\phpmvc\Application;
+use jacuve\phpmvc\Model;
 
 class LoginForm extends Model
 {

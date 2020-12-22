@@ -1,5 +1,5 @@
 <?php 
-use app\core\Application;
+use jacuve\phpmvc\Application;
 ?>
 <html>
 <head>

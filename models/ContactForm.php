@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-use app\core\Model;
+use jacuve\phpmvc\Model;
 
 class ContactForm extends Model
 {
